@@ -1,4 +1,5 @@
-# GUI_19104045_Hasna-Rizki-Violina
+# Latihan GUI
+
 ### GAMBAR 1
 ![Gambar 1](https://user-images.githubusercontent.com/72425456/114390096-02ec5180-9bc0-11eb-9119-acb4ee87a667.png)
 ### GAMBAR 2
