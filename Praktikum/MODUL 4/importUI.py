@@ -23,6 +23,8 @@ class Ui_Form(object):
         self.Exit.setObjectName("Exit")
 
         self.retranslateUi(Form)
+        self.Exit.clicked.connect(Form.close)
+        self.Clear.clicked.connect(self.namaEdit.clear)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
