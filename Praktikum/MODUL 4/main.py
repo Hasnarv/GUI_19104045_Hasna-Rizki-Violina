@@ -3,6 +3,7 @@ from importUI import*
 from PyQt5.QtCore import*
 from PyQt5.QtWidgets import*
 
+
 class DemoQtDesainer(QDialog) :
     def __init__(self,parent = None) :
         QDialog. __init__(self,parent)
@@ -17,4 +18,4 @@ if __name__ == "__main__":
     a = QApplication(sys.argv)
     form = DemoQtDesainer()
     form.show()
-    a.exec_()
+    a.exec_()  
