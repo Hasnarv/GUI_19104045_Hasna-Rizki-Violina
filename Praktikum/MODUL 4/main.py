@@ -12,7 +12,7 @@ class DemoQtDesainer(QDialog) :
         self.ui.hallo.clicked.connect(self.halloClicked)
     
     def halloClicked(self):
-        QMessageBox.information(self, 'Demo QtDesigner','Hallo %s, apa kabar?' % self.ui.nameEdit.text())
+        QMessageBox.information(self, 'Demo QtDesigner','Hallo %s, apa kabar?' % self.ui.namaEdit.text())
 
 if __name__ == "__main__":
     a = QApplication(sys.argv)
