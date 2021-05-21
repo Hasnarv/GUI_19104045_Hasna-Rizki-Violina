@@ -1,5 +1,4 @@
 <h1 align="center">OUTPUT</h1>
-<hr>
 NIM  : 19104045<br>
 Nama : Hasna Rizki Violina
 <hr>
