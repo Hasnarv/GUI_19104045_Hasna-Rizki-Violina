@@ -19,4 +19,4 @@
 | 11 | Spin Box | ![SpinBox](https://user-images.githubusercontent.com/72425456/119077420-7171ca00-ba1e-11eb-8271-fafd38f96be7.png) |
 | 12 | Table Widget | ![TableWidget](https://user-images.githubusercontent.com/72425456/119077425-720a6080-ba1e-11eb-841b-4ace65232cd4.png) |
 | 13 | Text Edit | ![TextEdit](https://user-images.githubusercontent.com/72425456/119077427-733b8d80-ba1e-11eb-87d3-0e8d983050bd.png) |
-| 14 | Tree Widget | ![TreeWidget](https://user-images.githubusercontent.com/72425456/119077428-73d42400-ba1e-11eb-85fc-4fcfe40ddba0.png) |
+| 14 | Tree Widget | ![TreeWidget](https://user-images.githubusercontent.com/72425456/119077428-73d42400-ba1e-11eb-85fc-4fcfe40ddba0.png) | 
