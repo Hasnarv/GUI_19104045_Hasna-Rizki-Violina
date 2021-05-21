@@ -1,8 +1,8 @@
 <h1 align="center">OUTPUT</h1>
-<hr><hr>
+<hr>
 NIM  : 19104045<br>
 Nama : Hasna Rizki Violina
-<hr><hr>
+<hr>
 * Calendar Widget <br>
 ![CalendarWidget](https://user-images.githubusercontent.com/72425456/119077386-63bc4480-ba1e-11eb-8ba5-a6e75bec7c04.png)
 * Check Box <br>
