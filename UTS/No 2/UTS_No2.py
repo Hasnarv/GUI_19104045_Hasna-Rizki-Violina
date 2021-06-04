@@ -2,8 +2,10 @@ from PyQt5.QtWidgets import *
 
 app = QApplication([])
 
+# komponen untuk button Click
 button = QPushButton('Click')
 
+# fungsi ketika button di klik
 def on_button_clicked():
 
     alert = QMessageBox()
@@ -12,8 +14,7 @@ def on_button_clicked():
 
     alert.exec_()
 
- 
-
+# untuk mengaktifkan button
 button.clicked.connect(on_button_clicked)
 
 button.show()
