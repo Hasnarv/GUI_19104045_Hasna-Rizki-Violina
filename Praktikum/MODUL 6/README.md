@@ -44,3 +44,11 @@ Message 5 <br>
 ![file dialog2](https://user-images.githubusercontent.com/72425456/124148724-1e2d7580-daba-11eb-9bf6-ee908685c27d.png)
 
 ![file dialog2_2](https://user-images.githubusercontent.com/72425456/124148727-1ec60c00-daba-11eb-8115-5d663d39ac29.png)
+
+* Demo QFontDialog <br>
+![FONT 1](https://user-images.githubusercontent.com/72425456/124151238-8b420a80-dabc-11eb-8722-512bdd7a73b1.png)
+
+![FONT 2](https://user-images.githubusercontent.com/72425456/124151231-89784700-dabc-11eb-90fd-f23ac6e1994e.png)
+
+* Demo Main Windows <br>
+![MAINWINDOWS](https://user-images.githubusercontent.com/72425456/124151236-8aa97400-dabc-11eb-82b2-9ea6ab7508b9.png)
