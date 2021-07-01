@@ -15,25 +15,26 @@ Nama : Hasna Rizki Violina
 ![demodialog1_2](https://user-images.githubusercontent.com/72425456/124148718-1cfc4880-daba-11eb-8ebf-0ade198710b1.png)
 
 * Demo QDialog2 <br>
-- Bersifat Modal, form pertama tidak dapat diakses sebelum form kedua ditutup <br>
+Bersifat Modal, form pertama tidak dapat diakses sebelum form kedua ditutup <br>
 ![Demodialog_modal](https://user-images.githubusercontent.com/72425456/124148711-1bcb1b80-daba-11eb-8820-c4af9193969e.png)
-- Bersifat non-Modal, form pertama dapat diakses sebelum form kedua ditutup <br>
+
+Bersifat non-Modal, form pertama dapat diakses sebelum form kedua ditutup <br>
 ![Demodialog_non-modal](https://user-images.githubusercontent.com/72425456/124148715-1c63b200-daba-11eb-8360-71bd52720b61.png)
 
 * Demo QMessageBox <br>
-- Message 1 <br>
+Message 1 <br>
 ![message1](https://user-images.githubusercontent.com/72425456/124148728-1f5ea280-daba-11eb-94e4-854fb4a7d397.png)
 
-- Message 2 <br>
+Message 2 <br>
 ![message2](https://user-images.githubusercontent.com/72425456/124148730-1ff73900-daba-11eb-96d1-d96772cb58f4.png)
 
-- Message 3 <br>
+Message 3 <br>
 ![message3](https://user-images.githubusercontent.com/72425456/124148732-208fcf80-daba-11eb-9b38-9a8a86d1b9b2.png)
 
-- Message 4 <br>
+Message 4 <br>
 ![message4](https://user-images.githubusercontent.com/72425456/124148735-208fcf80-daba-11eb-8946-a946d83eec21.png)
 
-- Message 5 <br>
+Message 5 <br>
 ![message5](https://user-images.githubusercontent.com/72425456/124148738-21286600-daba-11eb-87e5-388b098001f8.png)
 
 * Demo File Dialog <br>
