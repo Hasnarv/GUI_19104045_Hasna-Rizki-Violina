@@ -86,7 +86,8 @@ class Ui_datamhs(object):
         font.setBold(True)
         font.setWeight(75)
         
-        #table widget
+#table widget
+       
         self.label_15.setFont(font)
         self.label_15.setObjectName("label_15")
         self.tableWidget = QtWidgets.QTableWidget(self.centralwidget)
@@ -98,6 +99,11 @@ class Ui_datamhs(object):
         self.tableWidget.setEditTriggers(QtWidgets.QTableWidget.NoEditTriggers)
         self.tableWidget.itemClicked.connect(self.gett)
         self.baca()
+
+        #datamhs.setCentralWidget(self.centralwidget)
+        #self.statusbar = QtWidgets.QStatusBar(datamhs)
+        #self.statusbar.setObjectName("statusbar")
+        #datamhs.setStatusBar(self.statusbar)
         
         self.retranslateUi(datamhs)
         QtCore.QMetaObject.connectSlotsByName(datamhs)
@@ -115,7 +121,17 @@ class Ui_datamhs(object):
         self.btnHapus_2.setText(_translate("datamhs", "Hapus"))
         self.label_15.setText(_translate("datamhs", "Data Mahasiswa"))
 
+#fungsi koneksi ke db mysql
+    #def koneksi(self):
+        #con = pymysql.connect(db='datamhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
+        #cur = con.cursor()
+        #if(cur):
+        #    self.messagebox("Koneksi", "Koneksi Berhasil")
+        #else:
+        #    self.messagebox("Koneksi", "Koneksi Gagal")
 
+#fungsi untuk menampilkan dialog messagebox
+        
     def messagebox(self, title, message):
         mess = QtWidgets.QMessageBox()
         mess.setWindowTitle(title)
@@ -123,9 +139,10 @@ class Ui_datamhs(object):
         mess.setStandardButtons(QtWidgets.QMessageBox.Ok)
         mess.exec_()
 
-        #fungsi read data
+#fungsi read data
+        
     def baca(self):
-        con = pymysql.connect(db='db_mhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
+        con = pymysql.connect(db='datamhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
         cur = con.cursor()
         result = cur.execute("SELECT * FROM mhs")
         self.tableWidget.setRowCount(0)
@@ -135,7 +152,8 @@ class Ui_datamhs(object):
             for column_number, data in enumerate(row_data):
                 self.tableWidget.setItem(row_number, column_number, QtWidgets.QTableWidgetItem(str(data)))
         
-        #fungsi select buat ngambil data   
+#fungsi select untuk ngambil data
+        
     def gett(self):
         indexes = []
         for selectionRange in self.tableWidget.selectedRanges():
@@ -147,7 +165,8 @@ class Ui_datamhs(object):
             self.txtJurusan_2.setText(self.tableWidget.item(i, 2).text())
             self.txtNo_2.setText(self.tableWidget.item(i, 3).text())
 
-        #fungsi untuk menambahkan data ke database
+#fungsi untuk menambahkann data ke db dan table widget (ui)
+
     def tambah_2(self):
         nim = self.txtNIM_2.text()
         nama = self.txtNama_2.text()
@@ -156,7 +175,7 @@ class Ui_datamhs(object):
         insert = (nim, nama, jurusan, no)
         print(insert)
         if self.txtNIM_2.text() and self.txtNama_2.text() and self.txtJurusan_2.text() and self.txtNo_2.text():
-            con = pymysql.connect(db='db_mhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
+            con = pymysql.connect(db='datamhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
             cur = con.cursor()
             sql = "INSERT INTO mhs(nim, nama, jurusan, no)" + "VALUES"+ str(insert)
             data = cur.execute(sql)
@@ -166,13 +185,14 @@ class Ui_datamhs(object):
         else:
             self.messagebox("GAGAL", "Mohon lengkapi form ")
 
-        #fungsi edit di tab data
+#fungsi edit di tab data
+        
     def edit(self):
         nim = self.txtNIM_2.text()
         nama = self.txtNama_2.text()
         jurusan = self.txtJurusan_2.text()
         no = self.txtNo_2.text()
-        con = pymysql.connect(db='db_mhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
+        con = pymysql.connect(db='datamhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
         cur = con.cursor()
         sql = "UPDATE mhs SET nama=%s, jurusan=%s, no=%s WHERE nim=%s"
         data = cur.execute(sql, (nama, jurusan, no, nim))
@@ -183,10 +203,11 @@ class Ui_datamhs(object):
         self.baca()
         self.clear_2()
 
-        #fungsi hapus di tab data
+#fungsi hapus di tab data
+
     def hapus(self):
         nim = self.txtNIM_2.text()
-        con = pymysql.connect(db='db_mhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
+        con = pymysql.connect(db='datamhs', user='root', passwd='', host='localhost', port=3306, autocommit=True)
         cur = con.cursor()
         sql = "DELETE FROM mhs where nim=%s"
         data = cur.execute(sql, (nim))
@@ -197,7 +218,8 @@ class Ui_datamhs(object):
         self.baca()
         self.clear_2()
 
-        #fungsi untuk menghapus lineedit stelah masukin data
+#fungsi hapus lineedit setelah memasukkan data
+        
     def clear_2(self):
         self.txtNIM_2.clear()
         self.txtNIM_2.setEnabled(True)
